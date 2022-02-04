@@ -1,23 +1,5 @@
 {% extends 'layout.html' %}
 {% block header_block %}
-<form method="POST" class="form-inline" action="">
-    {{ form.hidden_tag() }}
-    <div class="form-group">
-        {% if form.string.errors %}
-        {{ form.string(class="form-control form-control-lg is-invalid") }}
-        <div class="invalid-feedback">
-            {% for error in form.string.errors %}
-            <span>{{ error }}</span>
-            {% endfor %}
-        </div>
-        {% else %}
-        <div class="row">
-            {{ form.string(class="form-control form-control-lg mr-5") }}
-            {{ form.search_button(class='btn btn-outline-info mr-5') }}
-        </div>
-        {% endif %}
-    </div>
-</form>
 {% endblock header_block %}
 {% block content %}
 {% for post in posts.items %}

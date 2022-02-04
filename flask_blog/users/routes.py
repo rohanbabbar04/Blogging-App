@@ -6,6 +6,7 @@ from flask_blog.users.forms import LoginForm, RegistrationForm, RequestResetForm
     UpdateProfileForm
 from flask_blog.users.utils import save_image, sendResetEmail
 
+
 users = Blueprint('users', __name__)
 
 
