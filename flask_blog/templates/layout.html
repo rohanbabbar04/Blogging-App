@@ -40,7 +40,7 @@
                     {% if nav_image %}
                     <div class="dropdown">
                         <img class="rounded-circle account-img"
-                             src="/static/profile_pics/{{nav_image}}"
+                             src="{{ url_for('static',filename='profile_pics/{{nav_image}}') }}"
                              style="width:40px;height:40px;margin-top:5px">
                         <div class="dropdown-content">
                             <a href="{{ url_for('users.account') }}">Account</a>
