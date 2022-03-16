@@ -7,11 +7,7 @@ This is a Blogging Web Application created using the Flask Web Framework
 - Created the backend using Flask
 
 ## Project Setup
-- First Clone the repository.
-- Create the virtual environment for the project.
-
-      $ conda create -n myenv python=3.6
-  
+- First Clone the repository.  
 - Install the required packages using requirements.txt inside the environemnt using pip.
 
       $ pip install -r requirements.txt
